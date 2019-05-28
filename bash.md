@@ -247,9 +247,9 @@ done
 ### Reading lines
 
 ```bash
-< file.txt | while read line; do
+while IFS= read line; do
   echo $line
-done
+done < file.txt
 ```
 
 ### Forever
